@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <style>
+        	body
+        	{
+        		margin: 0%;
+        		padding: 0%;
+        	}
+        	#top-div
+        	{
+        		width: 100%;
+        		height: 50px;
+        	}
+        	#top-div>div
+        	{
+        		width: 14%;
+        		height: 80%;
+        		margin-top: 15px;
+        		float: right;
+        		display: flex;
+        	}
+        	#top-div>div>a
+        	{
+        		color: rgba(0,0,0,.54);
+        		text-decoration: none;
+        		margin-right: 10px; 
+        		margin-top: 10px; 
+        		height: 100%;
+        	}
+        	#top-div>div>a:hover
+        	{
+        		text-decoration: underline;
+        	}
+        	#showapps
+        	{
+        		margin-right: 15px;
+        		margin-top: 10px;
+        	} 
+        	#image
+        	{
+        		margin-right: 15px;
+
+        	}
+        	#logo-div
+        	{
+        		width: 100%;
+        		height: 233px;
+        		display: flex;
+        	}
+        	#g-logo
+        	{
+        		position: absolute;
+        		top: 30%;
+        		left: 40%;
+        	}
+        	#form-div
+        	{
+        		width: 100%;
+        		height: 140px;
+        		display: flex;
+        	}
+        	form
+        	{
+        		height: 100%;
+        		width: 100%;
+        		display: flex;
+        		flex-direction: column;
+         	}
+        	#searchbar
+        	{
+        		width: 37%;
+        		height: 44px;
+        		align-self: center;
+        		display: flex;
+        		justify-content: space-around;
+        		border-radius: 30px;
+        		border: 2px lightgrey solid;
+        	}
+        	#search-butt, #mic
+        	{
+        		margin-top: 10px;
+        	}
+        	#search-butt
+        	{
+        		color: lightgrey;
+        	}
+        	#butt-div
+        	{
+        		width: 45%;
+        		height: 50px;
+        		display: flex;
+        		align-self: center;
+  				justify-content: center;
+        	}
+        	#language-div
+        	{
+        		width: 100%;
+        		height: 28px;
+        		display: flex;
+        		justify-content: center;
+        	}
+        	#language-div>div
+        	{
+        		width: 50%;
+        		height: 100%;
+        		display: flex;
+        		justify-content: center;
+        	}
+        	#language-div span
+        	{
+        		display: flex;
+    			height: 28px;
+    			margin-top: 5px;
+        		align-self: center;
+        	}
+        	#language-div a
+        	{
+        		text-decoration: none;
+        		margin-left: 10px;
+        		margin-top: 5px;
+        		height: 15px;
+        	}
+        	#language-div>a:hover
+        	{
+        		text-decoration: underline;
+        	}
+        	.butt
+        	{
+        		height: 40px;
+        		margin: 15px 12px;
+        		border: none;
+        		border-radius: 4px;
+        	}
+        	.butt:hover
+        	{
+        		border: 1px rgba(0,0,0,.14) solid;
+        	}
+        	#search
+        	{
+        		width: 62%;
+        		height: 35px;
+        		margin-top: 5px;
+        		border: none;
+        		outline: none;
+        	}
+        	footer
+        	{
+        		display: flex;
+        		flex-direction: column;
+        		position: absolute;
+        		margin: 0px;
+        		padding: 0px;
+        		width: 100vw;
+        		bottom: 0px;
+        		overflow: hidden;
+        		color: rgba(0,0,0,.34);
+        	}
+        	#empty
+        	{
+        		height: 20vh;
+        		width: 100%;
+        		margin: 0px;
+        	}
+        	#footer-a
+        	{
+        		width: 100%;
+        		height: 40px;
+        		background: lightgrey;
+        		margin: 0px;
+        		border: 1px rgba(0,0,0,.14) solid;
+        		background: rgba(0,0,0,.04);
+        		border-bottom: none;
+        	}
+        	#footer-a>span
+        	{
+        		margin: 20px;
+        		padding-top: 10px;
+        	}
+        	#footer-b
+        	{
+        		width: 100%;
+        		height: 40px;
+        		display: inline;
+        		flex-wrap: wrap;
+        		border: 1px rgba(0,0,0,.14) solid;
+        		background: rgba(0,0,0,.04);
+        		margin: 0px;       	
+        	}
+        	#footer-b-a
+        	{
+        		width: 45%;
+        		height: 100%;
+        		float: left;
+        		display: flex;
+        	}
+        	#footer-b-b
+        	{
+        		width: 20%;
+        		height: 100%;
+        		float: right;
+        		display: flex;
+        	}
+        	#footer-b-a>a
+        	{
+        		color: rgba(0,0,0,.34);
+        		text-decoration: none;
+        		margin-left: 20px;
+        		padding-top: 10px;
+        	}
+        	#footer-b-a>a:hover
+        	{
+        		text-decoration: underline;
+        	}
+        	#footer-b-b>a
+        	{
+        		color: rgba(0,0,0,.34);
+        		text-decoration: none;
+        		margin-left: 20px;
+        		padding-top: 10px;
+        	}
+        	#footer-b-b>a:hover
+        	{
+        		text-decoration: underline;
+        	}
+
+        	
+        </style>
+    </head>
+    <body>
+    	<div id="top-div">
+    		<div>
+	    		<a href="advancedsearch.html">Advanced</a>
+	    		<a href="photosearch.html">Images</a>
+	    	</div>
+    	</div>
+    	<div id="logo-div">
+    		<img src="google-2015.svg" id="g-logo" width="272px">
+    	</div>
+    	<div id="form-div">
+	        <form action="https://google.com/search">
+	        	<div id="searchbar">
+	        		<img src="icons8-search.svg" id="search-butt" width="24" height="24">
+	            	<input type="text" name="q" id="search">
+	            	<img src="google-mic.svg" id="mic" width="24px" height="24px">
+	            </div>
+	            <div id="butt-div">
+	        		<input type="submit" name="butt1" value="Google search" class="butt">
+        			<input type="submit" name="butt2" value="I'm feeling lucky" class="butt">
+        		</div>
+	        </form>
+    	</div>
+    	<div id="language-div">
+    		<div>
+		        <span>Google offered in:</span>
+	        	<a href="https://www.google.com/setprefs?sig=0__xrYFnLfPT2rZvrxRIgtsaQq-qY%3D&hl=ha&source=homepage&sa=X&ved=0ahUKEwjo5cSikMjrAhUPjqQKHZDcDdoQ2ZgBCA8">Hausa</a> 
+	        	<a href="https://www.google.com/setprefs?sig=0__xrYFnLfPT2rZvrxRIgtsaQq-qY%3D&hl=ig&source=homepage&sa=X&ved=0ahUKEwjh6sjxl8jrAhW3A2MBHWr_CKcQ2ZgBCBA">Igbo</a>
+	        	<a href="https://www.google.com/setprefs?sig=0__xrYFnLfPT2rZvrxRIgtsaQq-qY%3D&hl=yo&source=homepage&sa=X&ved=0ahUKEwjwq-TEnsjrAhWJxYUKHWdOBsAQ2ZgBCBE">Èdè Yorùbá</a>
+	        	<a href="https://www.google.com/setprefs?sig=0__xrYFnLfPT2rZvrxRIgtsaQq-qY%3D&hl=pcm&source=homepage&sa=X&ved=0ahUKEwjwq-TEnsjrAhWJxYUKHWdOBsAQ2ZgBCBI">Nigerian Pidgin</a>
+	        </div>
+	    </div>
+        <footer>
+        	<div id="empty"></div>
+        	<div id="footer-a"><span>Nigeria</span></div>
+        	<div id="footer-b">
+        		<div id="footer-b-a">
+        			<a href="https://www.google.com/intl/en_ng/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a>
+        			<a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Business</a>
+        			<a href="https://about.google/?utm_source=google-NG&utm_medium=referral&utm_campaign=hp-footer&fg=1">About</a>
+        			<a href="https://google.com/search/howsearchworks/?fg=1">How search works</a>
+        		</div>
+        		<div id="footer-b-b">
+        			<a href="https://policies.google.com/privacy?hl=en-NG&fg=1">Privacy</a>
+        			<a href="https://policies.google.com/terms?hl=en-NG&fg=1">Terms</a>
+        			<a href="https://www.google.com/preferences?hl=en">Settings</a>
+        		</div>
+        	</div>
+        </footer>
+    </body>
+</html>
